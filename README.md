@@ -6,10 +6,14 @@
 
 Componentes utilizados:
 
-FluentValidation.AspNetCore: validaciones del modelo
+FluentValidation.AspNetCore: validaciones del modelo.
+
 AutoMapper: mapeo de entidades con DTOS.
+
 AutoWrapper: estandar de formato de respuestas.
+
 Dapper (ORM): Acceso a datos (ejemplo de entidad persona).
+
 SQL para crear tabla:
 CREATE TABLE [dbo].[Person]
 (
@@ -18,9 +22,11 @@ CREATE TABLE [dbo].[Person]
     	[LastName] NVARCHAR(20) NOT NULL, 
     	[DateOfBirth] DATETIME NOT NULL
 )
+
 modificar appsettings.json para string de conexion a la BD.
 
 Swashbuckle.AspNetCore: documentacion.
+
 Serilog.AspNetCore: para generar log de ejecucion (queda en carpeta Logs)
 
 en "Domain/DataLogManager.cs" esta implementado la escritura y lectura de kafka 
